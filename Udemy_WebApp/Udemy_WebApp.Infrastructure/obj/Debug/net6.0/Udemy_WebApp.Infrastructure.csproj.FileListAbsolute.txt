@@ -1,4 +1,5 @@
 F:\Web Development\Udemy WebApp\Udemy_WebApp\Udemy_WebApp.Infrastructure\bin\Debug\net6.0\Udemy_WebApp.Infrastructure.deps.json
+F:\Web Development\Udemy WebApp\Udemy_WebApp\Udemy_WebApp.Infrastructure\bin\Debug\net6.0\Udemy_WebApp.Infrastructure.runtimeconfig.json
 F:\Web Development\Udemy WebApp\Udemy_WebApp\Udemy_WebApp.Infrastructure\bin\Debug\net6.0\Udemy_WebApp.Infrastructure.dll
 F:\Web Development\Udemy WebApp\Udemy_WebApp\Udemy_WebApp.Infrastructure\bin\Debug\net6.0\Udemy_WebApp.Infrastructure.pdb
 F:\Web Development\Udemy WebApp\Udemy_WebApp\Udemy_WebApp.Infrastructure\bin\Debug\net6.0\Udemy_WebApp.Application.dll
@@ -14,4 +15,5 @@ F:\Web Development\Udemy WebApp\Udemy_WebApp\Udemy_WebApp.Infrastructure\obj\Deb
 F:\Web Development\Udemy WebApp\Udemy_WebApp\Udemy_WebApp.Infrastructure\obj\Debug\net6.0\Udemy_WebApp.Infrastructure.dll
 F:\Web Development\Udemy WebApp\Udemy_WebApp\Udemy_WebApp.Infrastructure\obj\Debug\net6.0\refint\Udemy_WebApp.Infrastructure.dll
 F:\Web Development\Udemy WebApp\Udemy_WebApp\Udemy_WebApp.Infrastructure\obj\Debug\net6.0\Udemy_WebApp.Infrastructure.pdb
+F:\Web Development\Udemy WebApp\Udemy_WebApp\Udemy_WebApp.Infrastructure\obj\Debug\net6.0\Udemy_WebApp.Infrastructure.genruntimeconfig.cache
 F:\Web Development\Udemy WebApp\Udemy_WebApp\Udemy_WebApp.Infrastructure\obj\Debug\net6.0\ref\Udemy_WebApp.Infrastructure.dll

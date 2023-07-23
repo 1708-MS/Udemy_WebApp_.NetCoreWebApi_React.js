@@ -1,4 +1,5 @@
 F:\Web Development\Udemy WebApp\Udemy_WebApp\Udemy_WebApp.Domain\bin\Debug\net6.0\Udemy_WebApp.Domain.deps.json
+F:\Web Development\Udemy WebApp\Udemy_WebApp\Udemy_WebApp.Domain\bin\Debug\net6.0\Udemy_WebApp.Domain.runtimeconfig.json
 F:\Web Development\Udemy WebApp\Udemy_WebApp\Udemy_WebApp.Domain\bin\Debug\net6.0\Udemy_WebApp.Domain.dll
 F:\Web Development\Udemy WebApp\Udemy_WebApp\Udemy_WebApp.Domain\bin\Debug\net6.0\Udemy_WebApp.Domain.pdb
 F:\Web Development\Udemy WebApp\Udemy_WebApp\Udemy_WebApp.Domain\obj\Debug\net6.0\Udemy_WebApp.Domain.csproj.AssemblyReference.cache
@@ -9,4 +10,5 @@ F:\Web Development\Udemy WebApp\Udemy_WebApp\Udemy_WebApp.Domain\obj\Debug\net6.
 F:\Web Development\Udemy WebApp\Udemy_WebApp\Udemy_WebApp.Domain\obj\Debug\net6.0\Udemy_WebApp.Domain.dll
 F:\Web Development\Udemy WebApp\Udemy_WebApp\Udemy_WebApp.Domain\obj\Debug\net6.0\refint\Udemy_WebApp.Domain.dll
 F:\Web Development\Udemy WebApp\Udemy_WebApp\Udemy_WebApp.Domain\obj\Debug\net6.0\Udemy_WebApp.Domain.pdb
+F:\Web Development\Udemy WebApp\Udemy_WebApp\Udemy_WebApp.Domain\obj\Debug\net6.0\Udemy_WebApp.Domain.genruntimeconfig.cache
 F:\Web Development\Udemy WebApp\Udemy_WebApp\Udemy_WebApp.Domain\obj\Debug\net6.0\ref\Udemy_WebApp.Domain.dll
