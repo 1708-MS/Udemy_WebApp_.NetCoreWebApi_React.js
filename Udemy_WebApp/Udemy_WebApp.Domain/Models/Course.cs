@@ -13,7 +13,12 @@ namespace Udemy_WebApp.Domain.Models
         public string CourseDescription { get; set; }
         public decimal CourseListPrice { get; set; }
         public DateTime CourseCreatedAt { get; set; }
+        public decimal CourseDurationTime { get; set; }
         public int CourseCategoryId { get; set; }
         public CourseCategory CourseCategory { get; set; }
+        public int LevelId { get; set; }
+        public Level Level { get; set; }
+        public int LanguageId { get; set; }
+        public Language Language { get; set; }
     }
 }

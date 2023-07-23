@@ -21,5 +21,7 @@ namespace Udemy_WebApp.Infrastructure.DataAccess
         public DbSet<ApplicationRole> ApplicationRoles { get; set; }
         public DbSet<Course> Courses { get; set; }
         public DbSet<CourseCategory> CourseCategories { get; set; }
+        public DbSet<Level> Levels { get; set; }
+        public DbSet<Language> Languages { get; set; }
     }
 }

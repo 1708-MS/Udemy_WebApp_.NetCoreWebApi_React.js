@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Udemy_WebApp.Infrastructure.DataAccess;
 
@@ -11,9 +12,10 @@ using Udemy_WebApp.Infrastructure.DataAccess;
 namespace Udemy_WebApp.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230723173303_AddedLanguageModelAndLanguageConfig")]
+    partial class AddedLanguageModelAndLanguageConfig
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -178,10 +180,6 @@ namespace Udemy_WebApp.Infrastructure.Migrations
                     b.Property<string>("CourseDescription")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<decimal>("CourseDurationTime")
-                        .HasColumnType("decimal(5,2)")
-                        .HasColumnName("DurationTime(in Hours)");
 
                     b.Property<decimal>("CourseListPrice")
                         .HasColumnType("decimal(7,2)");

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Udemy_WebApp.Infrastructure.DataAccess;
 
@@ -11,9 +12,10 @@ using Udemy_WebApp.Infrastructure.DataAccess;
 namespace Udemy_WebApp.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230723172429_AddedLevelModelAndLevelConfig")]
+    partial class AddedLevelModelAndLevelConfig
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -179,10 +181,6 @@ namespace Udemy_WebApp.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("CourseDurationTime")
-                        .HasColumnType("decimal(5,2)")
-                        .HasColumnName("DurationTime(in Hours)");
-
                     b.Property<decimal>("CourseListPrice")
                         .HasColumnType("decimal(7,2)");
 
@@ -190,17 +188,12 @@ namespace Udemy_WebApp.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("LanguageId")
-                        .HasColumnType("int");
-
                     b.Property<int>("LevelId")
                         .HasColumnType("int");
 
                     b.HasKey("CourseId");
 
                     b.HasIndex("CourseCategoryId");
-
-                    b.HasIndex("LanguageId");
 
                     b.HasIndex("LevelId");
 
@@ -224,23 +217,6 @@ namespace Udemy_WebApp.Infrastructure.Migrations
                     b.ToTable("CourseCategories");
                 });
 
-            modelBuilder.Entity("Udemy_WebApp.Domain.Models.Language", b =>
-                {
-                    b.Property<int>("LanguageId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("LanguageId"), 1L, 1);
-
-                    b.Property<string>("LanguageName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("LanguageId");
-
-                    b.ToTable("Languages");
-                });
-
             modelBuilder.Entity("Udemy_WebApp.Domain.Models.Level", b =>
                 {
                     b.Property<int>("LevelId")
@@ -255,7 +231,7 @@ namespace Udemy_WebApp.Infrastructure.Migrations
 
                     b.HasKey("LevelId");
 
-                    b.ToTable("Levels");
+                    b.ToTable("Level");
                 });
 
             modelBuilder.Entity("Udemy_WebApp.Infrastructure.Identity.ApplicationUser", b =>
@@ -389,12 +365,6 @@ namespace Udemy_WebApp.Infrastructure.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("Udemy_WebApp.Domain.Models.Language", "Language")
-                        .WithMany("Courses")
-                        .HasForeignKey("LanguageId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
                     b.HasOne("Udemy_WebApp.Domain.Models.Level", "Level")
                         .WithMany("Courses")
                         .HasForeignKey("LevelId")
@@ -403,17 +373,10 @@ namespace Udemy_WebApp.Infrastructure.Migrations
 
                     b.Navigation("CourseCategory");
 
-                    b.Navigation("Language");
-
                     b.Navigation("Level");
                 });
 
             modelBuilder.Entity("Udemy_WebApp.Domain.Models.CourseCategory", b =>
-                {
-                    b.Navigation("Courses");
-                });
-
-            modelBuilder.Entity("Udemy_WebApp.Domain.Models.Language", b =>
                 {
                     b.Navigation("Courses");
                 });

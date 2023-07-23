@@ -18,12 +18,25 @@ namespace Udemy_WebApp.Infrastructure.ModelConfigurations
             builder.Property(Course => Course.CourseDescription).IsRequired();
             builder.Property(Course => Course.CourseListPrice).HasColumnType("decimal(7, 2)").IsRequired();
             builder.Property(Course => Course.CourseCreatedAt).IsRequired();
+            builder.Property(Course => Course.CourseDurationTime).HasColumnName("DurationTime(in Hours)").HasColumnType("decimal(5, 2)");
 
             // Configuration of the relationship with CourseCategory
             builder.HasOne(Course => Course.CourseCategory)
                 .WithMany(CourseCategory => CourseCategory.Courses)
                 .HasForeignKey(Course => Course.CourseCategoryId)
                 .OnDelete(DeleteBehavior.Restrict);
+
+            // Configure the one-to-many relationship between Course and Level
+            builder.HasOne(c => c.Level)
+                   .WithMany(l => l.Courses)
+                   .HasForeignKey(c => c.LevelId)
+                   .OnDelete(DeleteBehavior.Restrict);
+
+            // Configure the one-to-many relationship between Course and Language
+            builder.HasOne(c => c.Language)
+                   .WithMany(l => l.Courses)
+                   .HasForeignKey(c => c.LanguageId)
+                   .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }
