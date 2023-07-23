@@ -15,4 +15,12 @@
     <ProjectReference Include="..\Udemy_WebApp.Infrastructure\Udemy_WebApp.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EditorConfigFiles Remove="F:\Web Development\Udemy WebApp\Udemy_WebApp\Udemy_WebApp.WebApi\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="F:\Web Development\Udemy WebApp\Udemy_WebApp\Udemy_WebApp.WebApi\.editorconfig" />
+  </ItemGroup>
+
 </Project>

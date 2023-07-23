@@ -1,0 +1,7 @@
+F:\Web Development\Udemy WebApp\Udemy_WebApp\Udemy_WebApp.WebApi\obj\Debug\net6.0\Udemy_WebApp.WebApi.csproj.AssemblyReference.cache
+F:\Web Development\Udemy WebApp\Udemy_WebApp\Udemy_WebApp.WebApi\obj\Debug\net6.0\Udemy_WebApp.WebApi.GeneratedMSBuildEditorConfig.editorconfig
+F:\Web Development\Udemy WebApp\Udemy_WebApp\Udemy_WebApp.WebApi\obj\Debug\net6.0\Udemy_WebApp.WebApi.AssemblyInfoInputs.cache
+F:\Web Development\Udemy WebApp\Udemy_WebApp\Udemy_WebApp.WebApi\obj\Debug\net6.0\Udemy_WebApp.WebApi.AssemblyInfo.cs
+F:\Web Development\Udemy WebApp\Udemy_WebApp\Udemy_WebApp.WebApi\obj\Debug\net6.0\Udemy_WebApp.WebApi.csproj.CoreCompileInputs.cache
+F:\Web Development\Udemy WebApp\Udemy_WebApp\Udemy_WebApp.WebApi\obj\Debug\net6.0\Udemy_WebApp.WebApi.MvcApplicationPartsAssemblyInfo.cs
+F:\Web Development\Udemy WebApp\Udemy_WebApp\Udemy_WebApp.WebApi\obj\Debug\net6.0\Udemy_WebApp.WebApi.MvcApplicationPartsAssemblyInfo.cache
